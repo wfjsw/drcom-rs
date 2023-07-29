@@ -1,0 +1,21 @@
+[package]
+name = "drcom-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+strip = "symbols"
+opt-level = 3
+
+[dependencies]
+aes_frast = "0.1.5"
+byteorder = "1.4.3"
+chrono = "0.4.19"
+clap = { version = "4.0.2", features = ["derive"] }
+digest = "0.10.1"
+md4 = "0.10.0"
+md5 = "0.7.0"
+rand = "0.8.5"
+sha1 = "0.10.0"
